@@ -1,90 +1,83 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ViaJá!!</title>
-    <link rel="shortcut icon" href="aviao.ico" type="image/x-icon">
+    <title>Maurice store</title>
+    <link rel="stylesheet" href="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_css_bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
     <link rel="stylesheet" href="main.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa:wght@700&family=Pacifico&family=Varela+Round&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>ViaJá!</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Passagens</a>
-                    </li>
-                    <li>
-                        <a href="#">Países</a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="container" >
+            <h1 class="text-colored1">Maurice store</h1>
+            <h2>Sobre nós</h2>
+            <h2>Contato</h2>
+        </div>
+        <div>
+            
         </div>
     </header>
-    <section>
-        <div class="container">
-            <img id="peixe" src="./imagens/peixe.jpeg" alt="foto do cardume de peixes">
-            <div>
-                <h2>vendendo sonhos</h2>
+    <div class="container" id="conteudo">
+        <div class="row">
+            <div class="col-md-7">
+                <img src="./midias/pandora1.jpg" alt="" class="rounded pb-5 pt-5">
+            </div>
+            <div class="col-md-4 ps-5 text-fs">
+                <h2> <span class="text-colored">Maurice store,</span> presente em todos os planetas</h2>
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro facilis rerum obcaecati cum eaque, ab quam accusantium impedit necessitatibus amet cumque corporis maxime ullam vel repellendus beatae nesciunt! Quisquam, numquam?
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae mollitia amet voluptates iure a porro voluptate voluptas. Reiciendis ratione similique distinctio, ea inventore assumenda velit quisquam voluptatibus ipsum voluptates? Temporibus totam perferendis expedita est, voluptates quo corrupti reprehenderit ad at?
                 </p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, corporis cumque sint est repellendus commodi culpa id molestias voluptatibus magnam illum impedit soluta eveniet cupiditate atque doloribus adipisci mollitia? Iste.
-                </p>
-                <ul class="logo">
-                    <li>
-                        <img src="./imagens/nintendo.png" alt="">
-                    </li>
-                    <li>
-                        <img src="./imagens/xbox.png" alt="">
-                    </li>
-                    <li>
-                        <img src="./imagens/playstation.png" alt="">
-                    </li>
-                </ul>
+                <i class="bi bi-android2 fs-4 text-colored1">
+                    Android
+                </i>
+                <i class="bi bi-apple text-colored1 fs-4 me-2 ms-2">
+                    Apple
+                </i>
+                <i class="bi bi-amd fs-4 text-colored1">
+                    AMD
+                </i>
             </div>
         </div>
-    </section>
-    <section id="contact">
-        <div class="container">
-            <h2>Contato</h2>
-            <div>
-                <div class="conosco">
-                    <br>
-                    <h3>Fale conosco</h3>
-                    <form>
-                        <input type="text" placeholder="Seu Nome" />
-                        <input type="email" placeholder="Seu E-mail" />
-                        <input type="tel" placeholder="Seu Telefone (opcional)" />
-                        <textarea placeholder="Sua mensagem"></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
+    </div>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-5 mb-4 ">
+            <h2>
+                <span class="text-colored2">Fale conosco</span>
+            </h2>
+            <form >
+                <div class="mb-3">
+                    <label class="form-label fw-bold text-colored2" for="nome">Seu nome</label>
+                    <input type="text" id="nome" class="form-control" required>
                 </div>
-                <div id="acompanhe">
-                    <h3>Nos acompanhe</h3>
-                    <ul class="logo">
-                        <li><a href="#" title="Siga nos no instagram"></a><img src="./imagens/instagram.png" alt="logo instagram"></li>
-                        <li><a href="#" title="Siga nos no facebook"></a><img src="./imagens/facebook.png" alt="logo facebook"></li>
-                        <li><a href="#" title="Visite nosso canal no youtube"></a><img src="./imagens/youtube.png" alt="logo youtube"></li>
-                    </ul>
+                <div class="mb-3">
+                    <label class="form-label fw-bold text-colored2" for="email">Seu email</label>
+                    <input type="email" id="email" class="form-control">
                 </div>
-                <div class="nos">
-                    <h3>Venha até nós</h3>
-                    <p>
-                        Rua Seis - n 245, Jardim américa - Jales - SP 
-                    </p>
+                <div class="mb-3">
+                    <label class="form-label fw-bold text-colored2" for="telefone">Seu telefone</label>
+                    <input type="tel" id="telefone" class="form-control">
                 </div>
-            </div>
+                <div class="mb-3">
+                    <label id="areatx" class="form-label fw-bold text-colored2" for="menasagem">Sua mensagem</label>
+                    <textarea  id="mensagem" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn fw-bold text-coloredbtn">Enviar</button>
+            </form>
         </div>
-    </section>
+        <div class="col-md-3 ">
+            <h2>
+                Siga nossas <span class="text-colored1">redes</span></div>
+                <div class="redes">
+                    <i class="bi bi-facebook"></i>
+                </div>
+            </h2>
+        </div>
+    </div>
+    <script src="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_js_bootstrap.bundle.min.js"></script>
 </body>
 </html>
